@@ -7,7 +7,11 @@ public class Bike : MonoBehaviour
     public Transform handle;
     public List<AxleInfo> axleInfos;
     public float maxMotorTorque;
-    public float maxStreetAngle;
+    public float maxSteeringAngle;
+    void start()
+    {
+        GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -0.5f, -0.2f);
+    }
 
     public void ApplyLocalPositionToVisuals(WheelCollider collider)
     {
