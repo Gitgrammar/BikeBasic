@@ -29,7 +29,7 @@ public class Bike : MonoBehaviour
     public void FixedUpdate()
     {
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
-        float steering = maxMotorTorque * Input.GetAxis("Horizontal");
+        float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
         foreach (AxleInfo axleInfo in axleInfos)
         {
             if (axleInfo.steering)

@@ -240,8 +240,8 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 300
   m_Drag: 0
-  m_AngularDrag: 5
-  m_UseGravity: 0
+  m_AngularDrag: 10
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   handle: {fileID: 119624345}
   axleInfos:
   - Wheel: {fileID: 1460107003}
-    motor: 1
+    motor: 0
     steering: 1
   - Wheel: {fileID: 1113618516}
     motor: 1
@@ -455,13 +455,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.036965817, y: -0.013781766, z: 0.0041062734, w: 0.9992131}
-  m_LocalPosition: {x: -0.01, y: 0.95, z: -7.38}
+  m_LocalRotation: {x: 0.0046095923, y: 0.99662673, z: -0.08193758, w: 0.00037897722}
+  m_LocalPosition: {x: -0.47, y: 2.24, z: 15.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -4.23, y: -1.6, z: 0.53}
+  m_LocalEulerAnglesHint: {x: 9.4, y: 180, z: 0.53}
 --- !u!1 &795647599
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +771,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.4
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
